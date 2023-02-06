@@ -1,0 +1,288 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Greeting_card.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 1118px;
+        }
+        .auto-style2 {
+            width: 908px;
+            height: 520px;
+            position: absolute;
+            top: 25px;
+            left: 559px;
+            z-index: 1;
+        }
+        .auto-style3 {
+            position: absolute;
+            top: 3px;
+            left: 161px;
+            z-index: 1;
+            width: 575px;
+            height: 268px;
+        }
+        .auto-style5 {
+            position: absolute;
+            top: 273px;
+            left: 25px;
+            z-index: 1;
+        }
+        .auto-style6 {
+            position: absolute;
+            top: 451px;
+            left: 182px;
+            z-index: 1;
+        }
+        .auto-style7 {
+            position: absolute;
+            top: 228px;
+            left: 169px;
+            z-index: 1;
+        }
+        .auto-style8 {
+            position: absolute;
+            top: 264px;
+            left: 171px;
+            z-index: 1;
+            margin-top: 0px;
+            right: 1274px;
+            height: -3px;
+        }
+        .auto-style9 {
+            position: absolute;
+            top: 298px;
+            z-index: 1;
+            margin-top: 0px;
+            width: 60px;
+            height: 16px;
+            bottom: 372px;
+            left: 173px;
+        }
+        .auto-style10 {
+            position: absolute;
+            top: 300px;
+            left: 260px;
+            z-index: 1;
+            height: 16px;
+            margin-top: 1px;
+        }
+        .auto-style15 {
+            position: absolute;
+            top: 390px;
+            left: 177px;
+            z-index: 1;
+        }
+        .auto-style16 {
+            position: absolute;
+            top: 332px;
+            left: 76px;
+            z-index: 1;
+            height: 19px;
+        }
+        .auto-style17 {
+            width: 107px;
+            height: 56px;
+            position: absolute;
+            top: 320px;
+            left: 172px;
+            z-index: 1;
+        }
+        .auto-style18 {
+            position: absolute;
+            top: 421px;
+            left: 349px;
+            z-index: 1;
+            width: 582px;
+            margin-top: 0px;
+        }
+        .auto-style19 {
+            position: absolute;
+            top: 481px;
+            left: 411px;
+            z-index: 1;
+            width: 527px;
+            margin-top: 0px;
+        }
+        .auto-style20 {
+            position: absolute;
+            top: 318px;
+            left: 374px;
+            z-index: 1;
+            width: 193px;
+            height: 102px;
+        }
+        .auto-style21 {
+            position: absolute;
+            top: 289px;
+            left: 358px;
+            z-index: 1;
+            width: 165px;
+            height: 98px;
+        }
+        .auto-style22 {
+            position: absolute;
+            top: 229px;
+            left: 92px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body bgcolor="white">
+    <form id="form1" runat="server">
+        <div class="auto-style1">
+            <asp:Panel ID="Panel1" runat="server" CssClass="auto-style2">
+                <asp:Label ID="Label8" runat="server" CssClass="auto-style18" Text="." Font-Bold="True" Font-Names="helvetica" Font-Overline="True" Font-Size="Large" Font-Underline="True" ForeColor="#990000"></asp:Label>
+                <asp:Image ID="Image3" runat="server" CssClass="auto-style21" ImageUrl="~/img/boy.png" />
+                <asp:Image ID="Image1" runat="server" CssClass="auto-style3" ImageUrl="~/img/222.jpg" />
+                <asp:Label ID="Label9" runat="server" CssClass="auto-style19" Text="." Font-Bold="True" Font-Names="helvetica" Font-Overline="True" Font-Size="Large" Font-Underline="False" ForeColor="#990000"></asp:Label>
+                <asp:Image ID="Image2" runat="server" CssClass="auto-style20" ImageUrl="~/img/women.jpg" />
+            </asp:Panel>
+            <asp:Label ID="Label2" runat="server" CssClass="auto-style5" Text="DATE OF BIRTH"></asp:Label>
+            <asp:Button ID="Button1" runat="server" CssClass="auto-style6" OnClick="Button1_Click" Text="GENERATE" />
+            <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style7"></asp:TextBox>
+            <asp:CheckBox ID="CheckBox1" runat="server" CssClass="auto-style15" Text="Add default pictures" />
+            <asp:Label ID="Label7" runat="server" CssClass="auto-style16" Text="GENDER"></asp:Label>
+            <asp:RadioButtonList ID="RadioButtonList1" runat="server" CssClass="auto-style17">
+                <asp:ListItem>MALE</asp:ListItem>
+                <asp:ListItem>FEMALE</asp:ListItem>
+            </asp:RadioButtonList>
+            <asp:Label ID="Label10" runat="server" CssClass="auto-style22" Text="NAME"></asp:Label>
+            <asp:DropDownList ID="DropDownList3" runat="server" CssClass="auto-style10">
+                <asp:ListItem>1998</asp:ListItem>
+                <asp:ListItem>1999</asp:ListItem>
+                <asp:ListItem>2000</asp:ListItem>
+                <asp:ListItem>2001</asp:ListItem>
+                <asp:ListItem>2002</asp:ListItem>
+                <asp:ListItem>2003</asp:ListItem>
+                <asp:ListItem>2004</asp:ListItem>
+                <asp:ListItem>2005</asp:ListItem>
+                <asp:ListItem>2006</asp:ListItem>
+                <asp:ListItem>2007</asp:ListItem>
+                <asp:ListItem>2008</asp:ListItem>
+                <asp:ListItem>2009</asp:ListItem>
+                <asp:ListItem>2010</asp:ListItem>
+                <asp:ListItem>2011</asp:ListItem>
+                <asp:ListItem>2012</asp:ListItem>
+                <asp:ListItem>2013</asp:ListItem>
+                <asp:ListItem>2014</asp:ListItem>
+                <asp:ListItem>2015</asp:ListItem>
+                <asp:ListItem>2016</asp:ListItem>
+                <asp:ListItem>2017</asp:ListItem>
+                <asp:ListItem>2018</asp:ListItem>
+                <asp:ListItem>2019</asp:ListItem>
+                <asp:ListItem>2020</asp:ListItem>
+                <asp:ListItem>2021</asp:ListItem>
+                <asp:ListItem>2022</asp:ListItem>
+                <asp:ListItem>2023</asp:ListItem>
+            </asp:DropDownList>
+            <asp:DropDownList ID="DropDownList2" runat="server" CssClass="auto-style9">
+                <asp:ListItem Value="01">JAN</asp:ListItem>
+                <asp:ListItem Value="02">FEB</asp:ListItem>
+                <asp:ListItem Value="03">MARCH</asp:ListItem>
+                <asp:ListItem Value="04">APRIL</asp:ListItem>
+                <asp:ListItem Value="05">MAY</asp:ListItem>
+                <asp:ListItem Value="06">JUNE</asp:ListItem>
+                <asp:ListItem Value="07">JULY</asp:ListItem>
+                <asp:ListItem Value="08">AUGUST</asp:ListItem>
+                <asp:ListItem Value="09">SEPTEMER</asp:ListItem>
+                <asp:ListItem Value="10">OCTOBER</asp:ListItem>
+                <asp:ListItem Value="11">NOVEMBER</asp:ListItem>
+                <asp:ListItem Value="12">DECEMBER</asp:ListItem>
+            </asp:DropDownList>
+            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style8">
+                <asp:ListItem>01</asp:ListItem>
+                <asp:ListItem>02</asp:ListItem>
+                <asp:ListItem>03</asp:ListItem>
+                <asp:ListItem>04</asp:ListItem>
+                <asp:ListItem>05</asp:ListItem>
+                <asp:ListItem>06</asp:ListItem>
+                <asp:ListItem>07</asp:ListItem>
+                <asp:ListItem>08</asp:ListItem>
+                <asp:ListItem>09</asp:ListItem>
+                <asp:ListItem>11</asp:ListItem>
+                <asp:ListItem>12</asp:ListItem>
+                <asp:ListItem>13</asp:ListItem>
+                <asp:ListItem>14</asp:ListItem>
+                <asp:ListItem>15</asp:ListItem>
+                <asp:ListItem>16</asp:ListItem>
+                <asp:ListItem>17</asp:ListItem>
+                <asp:ListItem>18</asp:ListItem>
+                <asp:ListItem>19</asp:ListItem>
+                <asp:ListItem>20</asp:ListItem>
+                <asp:ListItem>21</asp:ListItem>
+                <asp:ListItem>22</asp:ListItem>
+                <asp:ListItem>23</asp:ListItem>
+                <asp:ListItem>24</asp:ListItem>
+                <asp:ListItem>25</asp:ListItem>
+                <asp:ListItem>26</asp:ListItem>
+                <asp:ListItem>27</asp:ListItem>
+                <asp:ListItem>28</asp:ListItem>
+                <asp:ListItem>29</asp:ListItem>
+                <asp:ListItem>30</asp:ListItem>
+                <asp:ListItem>31</asp:ListItem>
+                <asp:ListItem></asp:ListItem>
+            </asp:DropDownList>
+        </div>
+    </form>
+</body>
+</html>
+
+
+------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Multi_view
+{
+    public partial class main : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 0;
+        }
+
+        protected void MultiView1_ActiveViewChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 1;
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 0;
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 2;
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 1;
+
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            if(CheckBox1.Checked)
+            {
+                Label7.Text = TextBox1.Text + "</br>" + TextBox4.Text + "</br>" +"Register Successfull";
+            }
+            MultiView1.ActiveViewIndex = 2;
+        }
+    }
+}
